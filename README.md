@@ -10,8 +10,13 @@ Your employee portal also has a download button for your platform.
 ## macOS (Homebrew)
 
 ```sh
-brew install --cask varman-io/tap/varman-device-agent
+brew tap varman-io/tap
+brew trust varman-io/tap
+brew install --cask varman-device-agent
 ```
+
+Recent Homebrew versions only load casks from third-party taps you trust,
+hence `brew trust`.
 
 Or download the `.dmg` for your Mac (Apple Silicon `arm64`, Intel `x64`) from
 [Releases](https://github.com/varman-io/device-agent/releases/latest).
